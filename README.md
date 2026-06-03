@@ -59,6 +59,12 @@ gallery_grid/
 
 ---
 
+## 🌐 Live Deployment
+
+You can view the live deployment of this project at: [https://gallery-grid.netlify.app](https://gallery-grid.netlify.app)
+
+---
+
 ## ⚡ Language Breakdown
 
 ```
@@ -71,7 +77,7 @@ JS    ████░░░░░░░░░░░░░░░░  14.8%
 
 <div align="center">
 
-*Built by [Soumi Saha](https://soumi-saha.netlify.app) · IEM Kolkata*  
+*Built by [Soumi Saha](https://soumi-saha.netlify.app)*  
 [Portfolio](https://soumi-saha.netlify.app) &nbsp;·&nbsp; [GitHub](https://github.com/soumi-saha12) &nbsp;·&nbsp; [LinkedIn](https://linkedin.com/in/soumi-saha-523bba318)
 
 </div>
