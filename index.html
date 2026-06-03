@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captured Moments — Image Gallery</title>
+  <meta name="description" content="A refined minimalist image gallery featuring a clean grid layout, subtle hover transitions, and an elegant fullscreen lightbox.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header Section -->
+    <header class="gallery-header">
+      <p class="gallery-eyebrow">Collection</p>
+      <h1 class="gallery-title">Captured Moments</h1>
+      <p class="gallery-subtitle">A curated set of images — click any to explore.</p>
+    </header>
+
+    <main>
+      <!-- Main Gallery Container -->
+      <div id="gallery">
+        
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item" data-index="0">
+          <img src="images/1.jpg" alt="Luminous Fantasy Forest with giant glowing mushrooms and starry twilight sky" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Luminous Forest</p>
+          </div>
+          <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Concept Art</span>
+            <h3 class="gallery-item-title">Luminous Forest</h3>
+          </div>
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item" data-index="1">
+          <img src="images/2.jpg" alt="Futuristic cyberpunk city at night with neon lights and flying cars" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Urban Decay</p>
+          </div>
+          <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Cyberpunk</span>
+            <h3 class="gallery-item-title">Cyberpunk City</h3>
+          </div>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item" data-index="2">
+          <img src="images/3.jpg" alt="Alpine lake reflecting majestic snow-capped mountain peaks at sunrise" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Still Waters</p>
+          </div>
+          <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Landscape</span>
+            <h3 class="gallery-item-title">Alpine Lake</h3>
+          </div>
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <div class="gallery-item" data-index="3">
+          <img src="images/4.jpg" alt="Minimalist concrete villa on cliffside with infinity pool and dramatic sunset" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Golden Hour</p>
+          </div>
+          <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Architecture</span>
+            <h3 class="gallery-item-title">Cliffside Villa</h3>
+          </div>
+        </div>
+
+        <!-- Gallery Item 5 -->
+        <div class="gallery-item" data-index="4">
+          <img src="images/5.jpg" alt="Ethereal abstract art displaying gold and indigo liquid swirling patterns" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Morning Mist</p>
+          </div>
+          <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Abstract</span>
+            <h3 class="gallery-item-title">Ethereal Swirls</h3>
+          </div>
+        </div>
+
+        <!-- Gallery Item 6 -->
+        <div class="gallery-item" data-index="5">
+          <img src="images/6.jpg" alt="Ancient stone temple ruins covered in vines hidden deep in a tropical jungle" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Solitude</p>
+          </div>
+          <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Adventure</span>
+            <h3 class="gallery-item-title">Hidden Temple</h3>
+          </div>
+        </div>
+
+        <!-- Gallery Item 7 -->
+        <div class="gallery-item" data-index="6">
+          <img src="images/7.jpg" alt="Stellar cosmic nebula gas clouds and clusters of glowing stars in deep space" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Ember Glow</p>
+          </div>
+          <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Astrophotography</span>
+            <h3 class="gallery-item-title">Cosmic Nebula</h3>
+          </div>
+        </div>
+
+        <!-- Gallery Item 8 -->
+        <div class="gallery-item" data-index="7">
+          <img src="images/8.jpg" alt="Vibrant neon synthwave landscape with geometric grid and digital sunset wireframe" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Fading Light</p>
+          </div>
+          <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">Retro</span>
+            <h3 class="gallery-item-title">Synthwave Sunset</h3>
+          </div>
+        </div>
+
+        <!-- Gallery Item 9 -->
+        <div class="gallery-item" data-index="8">
+          <img src="images/9.jpg" alt="Newly Added Artwork" loading="lazy">
+          <div class="item-overlay">
+            <p class="item-label">Infinite Calm</p>
+          </div>
+          <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-tag">New</span>
+            <h3 class="gallery-item-title">New Entry</h3>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Lightbox Overlay Structure -->
+  <div id="lightbox" class="lightbox">
+
+    <!-- blurred background grid -->
+    <div class="lb-bg-grid" id="lbBgGrid"></div>
+
+    <!-- controls -->
+    <button class="lb-close" id="lbClose">&#10005;</button>
+    <button class="lb-nav lb-prev" id="lbPrev">&#8249;</button>
+    <button class="lb-nav lb-next" id="lbNext">&#8250;</button>
+
+    <!-- main focused image -->
+    <div class="lb-main">
+      <img id="lbImg" src="" alt="Expanded view" />
+      <span class="lb-label" id="lbLabel"></span>
+      <span class="lb-counter" id="lbCounter"></span>
+    </div>
+
+    <!-- bottom thumbnail strip -->
+    <div class="lb-strip" id="lbStrip"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
