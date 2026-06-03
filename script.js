@@ -1,4 +1,15 @@
 const galleryItems = document.querySelectorAll('.gallery-item img');
+
+galleryItems.forEach(img => {
+  if (img.complete) {
+    img.closest('.gallery-item').classList.add('loaded');
+  } else {
+    img.addEventListener('load', () => {
+      img.closest('.gallery-item').classList.add('loaded');
+    });
+  }
+});
+
 const lightbox = document.getElementById('lightbox');
 const lbBgGrid = document.getElementById('lbBgGrid');
 const lbImg = document.getElementById('lbImg');

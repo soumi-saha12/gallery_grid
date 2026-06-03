@@ -312,3 +312,29 @@ body.lb-open { overflow: hidden; }
     aspect-ratio: 4 / 3;
   }
 }
+
+.gallery-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    #1a1f2e 25%,
+    #252b3b 50%,
+    #1a1f2e 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+  z-index: 1;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-item.loaded::before {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
