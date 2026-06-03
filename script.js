@@ -83,3 +83,18 @@ document.addEventListener('keydown', e => {
 lightbox.addEventListener('click', e => {
   if (e.target === lightbox) closeLightbox();
 });
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+lightbox.addEventListener('touchstart', e => {
+  touchStartX = e.changedTouches[0].screenX;
+}, { passive: true });
+
+lightbox.addEventListener('touchend', e => {
+  touchEndX = e.changedTouches[0].screenX;
+  const diff = touchStartX - touchEndX;
+  if (Math.abs(diff) < 50) return; // ignore accidental taps
+  if (diff > 0) goTo(current + 1); // swipe left = next
+  if (diff < 0) goTo(current - 1); // swipe right = prev
+});
