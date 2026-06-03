@@ -364,3 +364,40 @@ body.lb-open { overflow: hidden; }
 .gallery-item:nth-child(7) { animation-delay: 0.47s; }
 .gallery-item:nth-child(8) { animation-delay: 0.54s; }
 .gallery-item:nth-child(9) { animation-delay: 0.61s; }
+
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 0 2rem 2rem;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.4);
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 7px 18px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.filter-btn:hover {
+  border-color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.7);
+}
+
+.filter-btn.active {
+  border-color: #c9b99a;
+  color: #c9b99a;
+  background: rgba(201,185,154,0.06);
+}
+
+.gallery-item.hidden {
+  display: none;
+}

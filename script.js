@@ -111,3 +111,26 @@ lightbox.addEventListener('touchend', e => {
   if (diff > 0) goTo(current + 1); // swipe left = next
   if (diff < 0) goTo(current - 1); // swipe right = prev
 });
+
+const filterBtns = document.querySelectorAll('.filter-btn');
+const allItems = document.querySelectorAll('.gallery-item');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+
+    // update active button
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.dataset.filter;
+
+    allItems.forEach(item => {
+      if (filter === 'all' || item.dataset.category === filter) {
+        item.classList.remove('hidden');
+      } else {
+        item.classList.add('hidden');
+      }
+    });
+
+  });
+});
