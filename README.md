@@ -4,10 +4,10 @@
 
 *A minimalist editorial image gallery — cinematic hover effects, immersive lightbox, category filtering, favourites, and full mobile support. Zero libraries.*
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-gallery--grid.netlify.app-c9b99a?style=flat-square)](https://gallery-grid.netlify.app)
+[![Live Demo](https://img.shields.io/badge/🌐_Live-gallery--grid.netlify.app-c9b99a?style=flat-square)](https://gallery-grid.netlify.app)
 ![HTML](https://img.shields.io/badge/HTML-48.9%25-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-36.3%25-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JS-14.8%25-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![JS](https://img.shields.io/badge/JS-14.8%25-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![No Libraries](https://img.shields.io/badge/Libraries-None-0a0f1e?style=flat-square)
 
 </div>
@@ -31,9 +31,17 @@
 
 ## 📸 Preview
 
-![Gallery Grid](https://gallery-grid.netlify.app)
+![Gallery Grid](screenshot-grid.png)
+![Lightbox](screenshot-lightbox.png)
 
-> Main gallery · Lightbox with blurred background · Category filtering · Favourites
+<table>
+  <tr>
+    <td><img src="screenshot-filters.png" alt="Filter bar"/></td>
+    <td><img src="screenshot-nature.png" alt="Nature filter"/></td>
+  </tr>
+</table>
+
+![Favourites](screenshot-favourites.png)
 
 ---
 
@@ -48,15 +56,6 @@ gallery_grid/
   ├── README.md
   └── .gitignore
 ```
-
----
-
-## 🚀 Getting Started
-
-1. **Clone** — `git clone https://github.com/soumi-saha12/gallery_grid.git`
-2. **Add images** — Drop photos into `/images`, named `1.jpg` through `9.jpg`
-3. **Update labels** — Edit `.item-label` and `data-category` in `index.html`
-4. **Open** — Launch `index.html` in any modern browser — no build step needed
 
 ---
 
