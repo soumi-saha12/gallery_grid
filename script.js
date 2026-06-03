@@ -24,6 +24,7 @@ let current = 0;
 
 const imageData = Array.from(galleryItems).map(img => ({
   src: img.src,
+  alt: img.alt || 'Gallery image',
   label: img.closest('.gallery-item').querySelector('.item-label')?.textContent || ''
 }));
 
@@ -64,6 +65,7 @@ function goTo(i) {
 function render() {
   const data = imageData[current];
   lbImg.src = data.src;
+  lbImg.alt = data.alt;
   lbLabel.textContent = data.label;
   lbCounter.textContent = (current + 1) + ' / ' + imageData.length;
 
