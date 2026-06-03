@@ -401,3 +401,36 @@ body.lb-open { overflow: hidden; }
 .gallery-item.hidden {
   display: none;
 }
+
+.fav-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.5);
+  font-size: 16px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  line-height: 1;
+  pointer-events: all;
+}
+
+.fav-btn:hover {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border-color: rgba(255,255,255,0.4);
+}
+
+.fav-btn.faved {
+  color: #e88c8c;
+  border-color: #e88c8c;
+  background: rgba(232,140,140,0.12);
+}

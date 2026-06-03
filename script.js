@@ -134,3 +134,58 @@ filterBtns.forEach(btn => {
 
   });
 });
+
+// Favourites logic
+let favourites = JSON.parse(localStorage.getItem('gallery-favs') || '[]');
+
+const favBtns = document.querySelectorAll('.fav-btn');
+
+function saveFavs() {
+  localStorage.setItem('gallery-favs', JSON.stringify(favourites));
+}
+
+function applyFavStates() {
+  favBtns.forEach(btn => {
+    if (favourites.includes(btn.dataset.id)) {
+      btn.classList.add('faved');
+      btn.textContent = '♥';
+    } else {
+      btn.classList.remove('faved');
+      btn.textContent = '♡';
+    }
+  });
+}
+
+favBtns.forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.stopPropagation(); // prevent lightbox from opening
+    const id = btn.dataset.id;
+    if (favourites.includes(id)) {
+      favourites = favourites.filter(f => f !== id);
+    } else {
+      favourites.push(id);
+    }
+    saveFavs();
+    applyFavStates();
+
+    // re-apply if favourites filter is active
+    const activeFilter = document.querySelector('.filter-btn.active');
+    if (activeFilter && activeFilter.dataset.filter === 'favourites') {
+      document.querySelectorAll('.gallery-item').forEach(item => {
+        item.classList.toggle('hidden', !favourites.includes(item.querySelector('.fav-btn').dataset.id));
+      });
+    }
+  });
+});
+
+// Hook favourites into filter bar
+document.querySelector('[data-filter="favourites"]')
+  ?.addEventListener('click', () => {
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      const id = item.querySelector('.fav-btn').dataset.id;
+      item.classList.toggle('hidden', !favourites.includes(id));
+    });
+  });
+
+// Init on page load
+applyFavStates();
