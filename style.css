@@ -40,6 +40,9 @@ body::before {
   padding: 4rem 1rem 2rem;
   max-width: 600px;
   margin: 0 auto;
+  opacity: 0;
+  animation: fadeSlideUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0s;
 }
 
 .gallery-eyebrow {
@@ -84,6 +87,8 @@ body::before {
   cursor: pointer;
   aspect-ratio: 3 / 2;
   touch-action: manipulation;
+  opacity: 0;
+  animation: fadeSlideUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 /* Image */
@@ -338,3 +343,24 @@ body.lb-open { overflow: hidden; }
   0% { background-position: 200% 0; }
   100% { background-position: -200% 0; }
 }
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gallery-item:nth-child(1) { animation-delay: 0.05s; }
+.gallery-item:nth-child(2) { animation-delay: 0.12s; }
+.gallery-item:nth-child(3) { animation-delay: 0.19s; }
+.gallery-item:nth-child(4) { animation-delay: 0.26s; }
+.gallery-item:nth-child(5) { animation-delay: 0.33s; }
+.gallery-item:nth-child(6) { animation-delay: 0.40s; }
+.gallery-item:nth-child(7) { animation-delay: 0.47s; }
+.gallery-item:nth-child(8) { animation-delay: 0.54s; }
+.gallery-item:nth-child(9) { animation-delay: 0.61s; }
