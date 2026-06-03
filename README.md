@@ -1,50 +1,70 @@
-# Captured Moments — Minimalist Image Gallery
+<div align="center">
 
-A modern, clean editorial-style visual showcase built using pure vanilla HTML, CSS, and JavaScript. Designed with mobile responsiveness, cinematic animations, and keyboard navigation.
+# Captured *Moments*
 
----
+*A minimalist editorial image gallery — cinematic hover effects, immersive fullscreen lightbox, keyboard navigation, and full mobile support. Zero libraries.*
 
-## ✨ Features
+![HTML](https://img.shields.io/badge/HTML-48.9%25-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-36.3%25-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-14.8%25-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![No Libraries](https://img.shields.io/badge/Libraries-None-0a0f1e?style=flat-square)
 
-- **Minimalist Grid Layout**: Flat, clean grid displaying images in a consistent `3:2` aspect ratio with no drop shadows or colorful accents.
-- **Cinematic Hover Interactions**: Image cards scale gently, blur, and darken on hover (`blur(3px) brightness(0.45)`) to display a centered, bold, uppercase title reveal.
-- **Immersive Fullscreen Lightbox**: 
-  - Displays a high-contrast central showcase card.
-  - Generates a dynamic blurred grid in the background using the other photos in the collection.
-  - Features an active cell filter to prevent duplicated imagery in the blurred background.
-- **Clickable Thumbnail Strip**: A bottom-aligned mini thumbnail bar allowing users to see the entire collection and jump between images instantly.
-- **Fluid Keyboard Support**: Full keydown triggers for navigation (`ArrowRight`, `ArrowLeft`) and dismissals (`Escape`).
-- **Mobile Usability**: Custom viewport-optimized grids and tap-friendly controls (`touch-action: manipulation`) with hidden controls on smaller mobile screens in favor of standard swipes/arrows.
-- **Zero Libraries**: Pure vanilla stack with no frameworks or third-party libraries.
+</div>
 
 ---
 
-## 📂 Project Structure
+## Features
+
+| Feature | Description |
+|---|---|
+| **Responsive Grid** | 3-col desktop · 2-col tablet · 1-col mobile, 3:2 aspect ratio |
+| **Cinematic Hover** | Scale + blur + darken with bold centered text rising from below |
+| **Immersive Lightbox** | Fullscreen focus with blurred gallery grid visible in background |
+| **Thumbnail Strip** | Bottom-aligned mini strip — jump to any image instantly |
+| **Keyboard Support** | Arrow keys to navigate · Escape to close |
+| **Touch Swipe** | Native swipe gesture support for mobile lightbox |
+| **Skeleton Loader** | Shimmer animation while images load |
+| **Staggered Entrance** | Cascading fade-slide-up animation on page load |
+
+---
+
+## Project Structure
 
 ```
-/image-gallery
-  ├── index.html        # HTML layout, header section, and lightbox markup
-  ├── style.css         # Styling system, typography, responsive media queries, and animations
-  ├── script.js         # DOM actions, blurred background generation, and keyboard listeners
-  └── /images           # Collection images directory (1.jpg, 2.jpg, etc.)
+gallery_grid/
+  ├── index.html     # layout, header, gallery items, lightbox markup
+  ├── style.css      # grid, hover fx, lightbox, animations, media queries
+  ├── script.js      # lightbox logic, keyboard + swipe events, skeleton
+  ├── images/        # 1.jpg → 9.jpg
+  ├── README.md
+  └── .gitignore
 ```
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-Simply open the `index.html` file in any modern web browser to view the gallery:
+1. **Clone** — `git clone https://github.com/soumi-saha12/gallery_grid.git`
+2. **Add images** — Drop photos into `/images`, named `1.jpg` through `9.jpg`
+3. **Update labels** — Edit `.item-label` text in `index.html` to match your image moods
+4. **Open** — Launch `index.html` in any modern browser — no build step, no install
 
-```bash
-# Mac Terminal
-open index.html
+---
+
+## Language Breakdown
+
+```
+HTML   ████████████░░░░░░░░  48.9%
+CSS    ████████░░░░░░░░░░░░  36.3%
+JS     ███░░░░░░░░░░░░░░░░░  14.8%
 ```
 
 ---
 
-## 🎨 Customize
+<div align="center">
 
-To add your own images:
-1. Place your images in the `/images` folder.
-2. Rename them to `1.jpg`, `2.jpg`, etc., to override the starter photos directly.
-3. Open `index.html` and update the titles within the `<p class="item-label">` tags to match your new image moods!
+*Built by [Soumi Saha](https://soumi-saha.netlify.app) · IEM Kolkata*
+
+[Portfolio](https://soumi-saha.netlify.app) &nbsp;·&nbsp; [GitHub](https://github.com/soumi-saha12) &nbsp;·&nbsp; [LinkedIn](https://linkedin.com/in/soumi-saha-523bba318)
+
+</div>
